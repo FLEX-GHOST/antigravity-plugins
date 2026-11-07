@@ -19,14 +19,8 @@ fi
 echo "[1/5] Installing Global NPM Packages..."
 npm install -g @upstash/context7-mcp exa-mcp-server snyk rea-agents
 
-echo "[2/5] Copying Plugins & Official Skills..."
+echo "[2/5] Deploying Plugins (with isolated skills)..."
 cp -R "$PLUGINS_SRC/"* "$PLUGINS_DEST/"
-
-for plugin_dir in "$PLUGINS_DEST"/*; do
-  if [ -d "$plugin_dir/skills" ]; then
-    cp -R "$plugin_dir/skills/"* "$SKILLS_DEST/"
-  fi
-done
 
 echo "[3/5] Generating Platform MCP Configurations & Injecting Isolated Keys..."
 NODE_BIN="$(command -v node)"
@@ -119,4 +113,4 @@ if [ -d "$OAUTH_DIR" ]; then
   echo "{}" > "$OAUTH_DIR/mcp_oauth_tokens.json"
 fi
 
-echo "[5/5] All 5 Antigravity Plugins Installed Successfully!"
+echo "[5/5] All 6 Antigravity Plugins Installed Successfully!"

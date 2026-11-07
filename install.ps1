@@ -32,15 +32,8 @@ $UvxCmd = (Get-Command uvx -ErrorAction SilentlyContinue).Source
 if (-not $UvxCmd) { $UvxCmd = "uvx" }
 $NpmRoot = (npm root -g).Trim()
 
-Write-Host "[2/5] Copying Plugins & Official Skills..." -ForegroundColor Cyan
+Write-Host "[2/5] Deploying Plugins (with isolated skills)..." -ForegroundColor Cyan
 Copy-Item -Path "$PluginsSrc\*" -Destination $PluginsDest -Recurse -Force
-
-Get-ChildItem -Path $PluginsDest -Directory | ForEach-Object {
-  $PluginSkillsDir = Join-Path $_.FullName "skills"
-  if (Test-Path $PluginSkillsDir) {
-    Copy-Item -Path "$PluginSkillsDir\*" -Destination $SkillsDest -Recurse -Force
-  }
-}
 
 Write-Host "[3/5] Generating Platform MCP Configurations & Injecting Isolated Keys..." -ForegroundColor Cyan
 
@@ -121,4 +114,4 @@ if (Test-Path (Split-Path -Parent $OAuthFile)) {
   "{}" | Set-Content $OAuthFile -Encoding UTF8
 }
 
-Write-Host "[5/5] All 5 Antigravity Plugins Installed Successfully!" -ForegroundColor Green
+Write-Host "[5/5] All 6 Antigravity Plugins Installed Successfully!" -ForegroundColor Green
