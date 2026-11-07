@@ -6,14 +6,14 @@
 
 <p align="center">
   <strong>حزمة إضافات متكاملة لمنصة Google Antigravity</strong><br>
-  6 إضافات إنتاجية رسمية &bull; 270+ أداة برمجية &bull; 61 مهارة معتمدة مجتمعياً &bull; معمارية عزل محكمة
+  6 إضافات إنتاجية رسمية &bull; 270+ أداة برمجية &bull; 64 مهارة معتمدة مجتمعياً &bull; معمارية عزل محكمة
 </p>
 
 <p align="center">
   <img src="https://img.shields.io/badge/Platform-Antigravity%202.0%2B-blue?style=flat-square" alt="Antigravity 2.0+" />
   <img src="https://img.shields.io/badge/Plugins-6%20Active-emerald?style=flat-square" alt="6 Plugins" />
-  <img src="https://img.shields.io/badge/Skills-61%20Verified-purple?style=flat-square" alt="61 Skills" />
-  <img src="https://img.shields.io/badge/Community%20Installs-13M%2B-orange?style=flat-square" alt="13M+ Installs" />
+  <img src="https://img.shields.io/badge/Skills-64%20Verified-purple?style=flat-square" alt="64 Skills" />
+  <img src="https://img.shields.io/badge/Community%20Installs-13.5M%2B-orange?style=flat-square" alt="13.5M+ Installs" />
   <img src="https://img.shields.io/badge/OS-Windows%20%7C%20Linux%20%7C%20macOS-lightgrey?style=flat-square" alt="Cross Platform" />
 </p>
 
@@ -29,7 +29,7 @@
 
 | الملحق | الإصدار | محرك التشغيل | عدد المهارات | عدد الأدوات | نموذج المصادقة | الغرض الأساسي |
 |---|---|---|---|---|---|---|
-| **Frontend Taste** | `v2.8.0` | Native Directive | 48 | — | بدون مفاتيح | هندسة الواجهات، الذوق البصري، ومنع AI Slop |
+| **Frontend Taste** | `v2.9.0` | Native Directive | 51 | — | بدون مفاتيح | هندسة الواجهات، الذوق البصري، ومنع AI Slop |
 | **REA** | `v2.0.0` | Node.js / REA Core | 5 | 229 | بيئة محلية | الهندسة العكسية الشاملة وتفكيك التطبيقات |
 | **Exa Search** | `v2.0.0` | NPX / Exa Server | 5 | 3 | API Key | البحث الدلالي الذكي واستخراج المحتوى |
 | **Snyk Security** | `v2.0.0` | Node.js / Snyk CLI | 1 | 15 | Token | فحص الثغرات الأمنية والتبعيات والحاويات |
@@ -40,17 +40,17 @@
 
 ## 2. تفصيل الملحقات (Plugins Breakdown)
 
-### 1. Frontend Taste & UI/UX Suite (`v2.8.0`)
-الحزمة الأساسية لهندسة وتصميم واجهات المستخدم الاحترافية بمستوى منصات الويب الحديثة (Apple, Vercel, Linear). تضم **48 مهارة معتمدة** مجتمعياً بإجمالي يتجاوز 13 مليون تثبيت، وتغطي 8 محاور تقنية:
+### 1. Frontend Taste & UI/UX Suite (`v2.9.0`)
+الحزمة الأساسية لهندسة وتصميم واجهات المستخدم الاحترافية بمستوى منصات الويب الحديثة (Apple, Vercel, Linear). تضم **51 مهارة معتمدة** مجتمعياً بإجمالي يتجاوز 13.5 مليون تثبيت، وتغطي 8 محاور تقنية:
 
 * **معايير الذوق البصري ومكافحة AI Slop (8 مهارات):**  
   `design-taste-frontend`, `high-end-visual-design`, `frontend-design`, `apple-design`, `emil-design-eng`, `visual-design-foundations`, `theme-factory`, `unslop`.
-* **الحركة والفيزياء التفاعلية (8 مهارات):**  
-  `animate`, `review-animations`, `improve-animations` (255K+), `animation-vocabulary` (268K+), `animation-performance`, `choreograph`, `gsap-core`, `ask-sonner` (166K+).
+* **الحركة والفيزياء التفاعلية (10 مهارات):**  
+  `animate`, `review-animations`, `improve-animations` (255K+), `find-animation-opportunities` (238K+), `animation-vocabulary` (268K+), `animation-performance`, `choreograph`, `gsap-core`, `gsap-react` (74K+), `ask-sonner` (166K+).
 * **هندسة المتجهات والشعارات والـ SVG (7 مهارات):**  
   `svg-precision-skill`, `svg-animations`, `svg-icon-generator`, `svg-logo-designer`, `logo-design`, `thesvg`, `brandkit`.
-* **معمارية React 19 وتطبيقات Vercel (3 مهارات):**  
-  `vercel-react-best-practices` (878K+), `vercel-react-view-transitions` (183K+), `composition-patterns` (442K+).
+* **معمارية React 19 وتطبيقات Vercel (4 مهارات):**  
+  `vercel-react-best-practices` (878K+), `vercel-react-view-transitions` (183K+), `vercel-optimize` (124K+), `composition-patterns` (442K+).
 * **أداء الويب ومؤشرات Core Web Vitals (2 مهارات):**  
   `core-web-vitals` (34K+), `web-design-guidelines`.
 * **إمكانية الوصول الشاملة والتنقل (2 مهارات):**  
@@ -131,7 +131,7 @@ chmod +x install.sh && ./install.sh
 بعد اكتمال التثبيت، أعد تشغيل أو تحديث واجهة **Antigravity** عبر اختصار `Ctrl + R`، ثم يمكنك التحقق عبر موجه الأوامر:
 
 ```powershell
-# فحص عدد مهارات Frontend Taste المنشورة (يجب أن يكون 48)
+# فحص عدد مهارات Frontend Taste المنشورة (يجب أن يكون 51)
 (Get-ChildItem -Path "$HOME\.gemini\config\plugins\frontend-taste\skills" -Directory).Count
 
 # فحص نظافة النطاق العام (يجب أن يظهر 0 مهارات حرة)
