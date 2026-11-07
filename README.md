@@ -15,7 +15,6 @@
   <img src="https://img.shields.io/badge/Skills-61%20Verified-purple?style=flat-square" alt="61 Skills" />
   <img src="https://img.shields.io/badge/Community%20Installs-13M%2B-orange?style=flat-square" alt="13M+ Installs" />
   <img src="https://img.shields.io/badge/OS-Windows%20%7C%20Linux%20%7C%20macOS-lightgrey?style=flat-square" alt="Cross Platform" />
-  <img src="https://img.shields.io/badge/License-MIT-green?style=flat-square" alt="License MIT" />
 </p>
 
 ---
