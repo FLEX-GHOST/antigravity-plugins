@@ -44,6 +44,9 @@ Whenever the user requests UI design, landing pages, component refactoring, SVG 
   - Core Web Vitals (LCP, INP, CLS) & loading diagnostics: `core-web-vitals`
   - WAI-ARIA APG compliance, focus traps & screen-reader audits: `accessibility`
   - Native View Transitions API & shared element morphing: `vercel-react-view-transitions`
+  - Identifying dead UI moments & micro-interaction opportunities: `find-animation-opportunities`
+  - Vercel project deployment, edge caching & function runtime optimization: `vercel-optimize`
+  - Official GSAP React integration, useGSAP hook & context scoping: `gsap-react`
 - Output a single-line "Design Read" before writing UI code: define page kind, audience, vibe, and visual archetype.
 
 Whenever the user requests code reviews, architecture changes, refactoring, or task verification:

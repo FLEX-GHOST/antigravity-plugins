@@ -1,8 +1,8 @@
 {
   "name": "frontend-taste",
   "displayName": "Frontend Taste",
-  "version": "2.8.0",
-  "description": "Enterprise UI/UX & Frontend Engineering Suite: 48 official community-verified skills (13M+ installs) covering clean UI architecture, Vercel React best practices, Core Web Vitals, accessibility, motion audits, Sonner toasts, unslop visual cleanup, and precision SVG engineering.",
+  "version": "2.9.0",
+  "description": "Enterprise UI/UX & Frontend Engineering Suite: 51 official community-verified skills (13.5M+ installs) covering clean UI architecture, Vercel React best practices, Core Web Vitals, accessibility, motion audits, GSAP React, Sonner toasts, unslop visual cleanup, and precision SVG engineering.",
   "logo": "assets/logo.svg",
   "suggestedPrompts": [
     "Design a high-end landing page with Linear-style aesthetics and micro-interactions",
