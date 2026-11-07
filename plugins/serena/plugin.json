@@ -1,0 +1,29 @@
+{
+  "name": "serena",
+  "displayName": "Serena Code Agent",
+  "version": "2.0.0",
+  "description": "LSP-powered semantic code navigation, symbol graph analysis, and AST-precision refactoring across multi-language repositories.",
+  "logo": "assets/logo.svg",
+  "suggestedPrompts": [
+    "Find all references and callers of the authentication middleware using Serena",
+    "Map the symbol hierarchy of this module and refactor the class interface safely",
+    "Check LSP diagnostics across modified files and resolve all type errors"
+  ],
+  "category": "Developer Tools",
+  "keywords": [
+    "serena",
+    "lsp",
+    "refactoring",
+    "code-navigation",
+    "ast",
+    "symbols",
+    "mcp"
+  ],
+  "author": {
+    "name": "Oraios AI",
+    "url": "https://github.com/oraios/serena"
+  },
+  "homepage": "https://github.com/oraios/serena",
+  "repository": "https://github.com/oraios/serena",
+  "license": "MIT"
+}

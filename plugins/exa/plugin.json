@@ -1,0 +1,29 @@
+{
+  "name": "exa",
+  "displayName": "Exa Search",
+  "version": "2.0.0",
+  "description": "AI-native semantic web search and deep research engine. Retrieve clean web contents, company intelligence, competitive signals, and real-time technical facts.",
+  "logo": "assets/logo.svg",
+  "suggestedPrompts": [
+    "Search the web using Exa for the latest security advisories on Next.js middleware",
+    "Research companies building autonomous penetration testing agents",
+    "Extract the full technical documentation from this URL using Exa"
+  ],
+  "category": "Search & Research",
+  "keywords": [
+    "search",
+    "exa",
+    "web-search",
+    "research",
+    "company-intelligence",
+    "lead-generation",
+    "mcp"
+  ],
+  "author": {
+    "name": "Exa Labs",
+    "url": "https://exa.ai"
+  },
+  "homepage": "https://exa.ai",
+  "repository": "https://github.com/exa-labs/exa-mcp-server",
+  "license": "MIT"
+}

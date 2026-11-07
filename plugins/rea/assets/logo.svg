@@ -1,0 +1,18 @@
+<svg width="34" height="34" viewBox="-3 -3 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="rea_bg" x1="0" y1="0" x2="28" y2="28" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#F43F5E"/>
+      <stop offset="50%" stop-color="#E11D48"/>
+      <stop offset="100%" stop-color="#881337"/>
+    </linearGradient>
+    <linearGradient id="rea_shine" x1="14" y1="0" x2="14" y2="28" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.28"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0.0"/>
+    </linearGradient>
+  </defs>
+  <rect width="28" height="28" rx="4" fill="url(#rea_bg)"/>
+  <rect x="0.5" y="0.5" width="27" height="27" rx="3.5" stroke="url(#rea_shine)" stroke-width="1"/>
+  <path d="M14 3.6L23.0 8.8V13.2L20.6 11.8V10.2L14 6.4L7.4 10.2V17.8L10.2 19.4V22.2L5.0 19.2V8.8L14 3.6Z" fill="#FFFFFF" fill-opacity="0.32"/>
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M9.5 8.5H15.4C18.2 8.5 20.1 10.1 20.1 12.6C20.1 14.4 19.1 15.8 17.3 16.4L20.6 21.5H17.2L14.3 16.8H12.5V21.5H9.5V8.5ZM12.5 11.1V14.3H15.1C16.4 14.3 17.1 13.7 17.1 12.6C17.1 11.6 16.4 11.1 15.1 11.1H12.5Z" fill="#FFFFFF"/>
+  <path d="M23.0 15.8V19.2L19.8 21.0L18.4 18.8L20.6 17.5V14.4L23.0 15.8Z" fill="#FFFFFF" fill-opacity="0.65"/>
+</svg>

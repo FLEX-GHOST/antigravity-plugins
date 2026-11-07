@@ -1,0 +1,32 @@
+{
+  "name": "rea",
+  "displayName": "REA — Reverse Engineer Anything",
+  "version": "2.0.0",
+  "description": "Autonomous binary decompilation, full-stack JavaScript & Electron runtime reconstruction, mobile APK/IPA dissection, firmware extraction, and deep packet/protocol inspection.",
+  "logo": "assets/logo.svg",
+  "suggestedPrompts": [
+    "Decompile this native binary and trace its cryptographic verification flow",
+    "Reconstruct the obfuscated JavaScript bundle and map all internal API endpoints",
+    "Inspect the captured PCAP traffic and reverse engineer the authentication handshake"
+  ],
+  "category": "Security & Reverse Engineering",
+  "keywords": [
+    "reverse-engineering",
+    "decompilation",
+    "binary-analysis",
+    "ghidra",
+    "rizin",
+    "frida",
+    "web-reconstruction",
+    "apk",
+    "firmware",
+    "mcp"
+  ],
+  "author": {
+    "name": "REA Security Suite",
+    "url": "https://github.com/rea-agents"
+  },
+  "homepage": "https://github.com/rea-agents",
+  "repository": "https://github.com/rea-agents",
+  "license": "MIT"
+}

@@ -1,0 +1,31 @@
+{
+  "name": "snyk",
+  "displayName": "Snyk Security",
+  "version": "2.0.0",
+  "description": "Developer-first application security platform. Scans source code (SAST), open-source dependencies (SCA), containers, Infrastructure-as-Code, and exposed secrets.",
+  "logo": "assets/logo.svg",
+  "suggestedPrompts": [
+    "Scan this project for security vulnerabilities and authorization bypasses with Snyk",
+    "Audit all open-source package dependencies for critical CVEs using Snyk SCA",
+    "Check the codebase for hardcoded API keys and exposed secrets"
+  ],
+  "category": "Security & Vulnerability Scanning",
+  "keywords": [
+    "security",
+    "snyk",
+    "sast",
+    "sca",
+    "vulnerability-scanner",
+    "cve",
+    "secrets",
+    "iac",
+    "mcp"
+  ],
+  "author": {
+    "name": "Snyk Ltd",
+    "url": "https://snyk.io"
+  },
+  "homepage": "https://snyk.io",
+  "repository": "https://github.com/snyk/cli",
+  "license": "Apache-2.0"
+}
