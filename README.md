@@ -6,14 +6,14 @@
 
 <p align="center">
   <strong>حزمة إضافات متكاملة لمنصة Google Antigravity</strong><br>
-  6 إضافات إنتاجية رسمية &bull; 270+ أداة برمجية &bull; 64 مهارة معتمدة مجتمعياً &bull; معمارية عزل محكمة
+  6 إضافات إنتاجية رسمية &bull; 270+ أداة برمجية &bull; 67 مهارة معتمدة مجتمعياً &bull; معمارية عزل محكمة
 </p>
 
 <p align="center">
   <img src="https://img.shields.io/badge/Platform-Antigravity%202.0%2B-blue?style=flat-square" alt="Antigravity 2.0+" />
   <img src="https://img.shields.io/badge/Plugins-6%20Active-emerald?style=flat-square" alt="6 Plugins" />
-  <img src="https://img.shields.io/badge/Skills-64%20Verified-purple?style=flat-square" alt="64 Skills" />
-  <img src="https://img.shields.io/badge/Community%20Installs-13.5M%2B-orange?style=flat-square" alt="13.5M+ Installs" />
+  <img src="https://img.shields.io/badge/Skills-67%20Verified-purple?style=flat-square" alt="67 Skills" />
+  <img src="https://img.shields.io/badge/Community%20Installs-13.6M%2B-orange?style=flat-square" alt="13.6M+ Installs" />
   <img src="https://img.shields.io/badge/OS-Windows%20%7C%20Linux%20%7C%20macOS-lightgrey?style=flat-square" alt="Cross Platform" />
 </p>
 
@@ -29,7 +29,7 @@
 
 | الملحق | الإصدار | محرك التشغيل | عدد المهارات | عدد الأدوات | نموذج المصادقة | الغرض الأساسي |
 |---|---|---|---|---|---|---|
-| **Frontend Taste** | `v2.9.0` | Native Directive | 51 | — | بدون مفاتيح | هندسة الواجهات، الذوق البصري، ومنع AI Slop |
+| **Frontend Taste** | `v2.10.0` | Native Directive | 54 | — | بدون مفاتيح | هندسة الواجهات، الذوق البصري، ومنع AI Slop |
 | **REA** | `v2.0.0` | Node.js / REA Core | 5 | 229 | بيئة محلية | الهندسة العكسية الشاملة وتفكيك التطبيقات |
 | **Exa Search** | `v2.0.0` | NPX / Exa Server | 5 | 3 | API Key | البحث الدلالي الذكي واستخراج المحتوى |
 | **Snyk Security** | `v2.0.0` | Node.js / Snyk CLI | 1 | 15 | Token | فحص الثغرات الأمنية والتبعيات والحاويات |
@@ -40,8 +40,8 @@
 
 ## 2. تفصيل الملحقات (Plugins Breakdown)
 
-### 1. Frontend Taste & UI/UX Suite (`v2.9.0`)
-الحزمة الأساسية لهندسة وتصميم واجهات المستخدم الاحترافية بمستوى منصات الويب الحديثة (Apple, Vercel, Linear). تضم **51 مهارة معتمدة** مجتمعياً بإجمالي يتجاوز 13.5 مليون تثبيت، وتغطي 8 محاور تقنية:
+### 1. Frontend Taste & UI/UX Suite (`v2.10.0`)
+الحزمة الأساسية لهندسة وتصميم واجهات المستخدم الاحترافية بمستوى منصات الويب الحديثة (Apple, Vercel, Linear). تضم **54 مهارة معتمدة** مجتمعياً بإجمالي يتجاوز 13.6 مليون تثبيت، وتغطي 9 محاور تقنية:
 
 * **معايير الذوق البصري ومكافحة AI Slop (8 مهارات):**  
   `design-taste-frontend`, `high-end-visual-design`, `frontend-design`, `apple-design`, `emil-design-eng`, `visual-design-foundations`, `theme-factory`, `unslop`.
@@ -59,6 +59,8 @@
   `frontend-ui-engineering` (76K+), `shadcn`, `tailwind-design-system`, `pick-ui-library`, `ui-ux-pro-max`, `web-artifacts-builder`, `design-mobile-apps`, `prototype`, `canvas-design`, `brand-guidelines`.
 * **حوكمة الأكواد والتحقق الصارم (7 مهارات):**  
   `anti-sycophancy`, `deslop`, `verification-before-completion`, `simplify`, `grill-me`, `executing-plans`, `improve-codebase-architecture`.
+* **معمارية الأكواد والتصميم الموديلار (3 مهارات):**  
+  `guarding-architecture`, `architecture-patterns`, `api-and-interface-design`.
 
 ### 2. REA — Reverse Engineer Anything (`v2.0.0`)
 منظومة الهندسة العكسية الاحترافية. تدعم تفكيك وتحليل ملفات الـ Native الثنائية (PE, ELF, Mach-O)، تطبيقات الويب و Electron، تطبيقات Android عبر ADB و APKTool، حزم الشبكات (PCAP)، ودعم Frida و Rizin و GDB.
@@ -131,7 +133,7 @@ chmod +x install.sh && ./install.sh
 بعد اكتمال التثبيت، أعد تشغيل أو تحديث واجهة **Antigravity** عبر اختصار `Ctrl + R`، ثم يمكنك التحقق عبر موجه الأوامر:
 
 ```powershell
-# فحص عدد مهارات Frontend Taste المنشورة (يجب أن يكون 51)
+# فحص عدد مهارات Frontend Taste المنشورة (يجب أن يكون 54)
 (Get-ChildItem -Path "$HOME\.gemini\config\plugins\frontend-taste\skills" -Directory).Count
 
 # فحص نظافة النطاق العام (يجب أن يظهر 0 مهارات حرة)

@@ -1,12 +1,12 @@
-# Frontend Taste (`v2.9.0`)
+# Frontend Taste (`v2.10.0`)
 
 The definitive clean UI/UX and frontend engineering plugin for Antigravity, curated to permanently eradicate generic AI templates, purple gradient meshes, Inter-font monotony, boolean prop proliferation, and janky transitions.
 
-This plugin bundles **51 official, community-verified skills (over 13.5M+ total installs)** from the world's premier creators (Anthropic, Vercel Labs, Emil Kowalski, Addy Osmani, Paul Bakaus, GreenSock, Leonxlnx, NextLevelBuilder).
+This plugin bundles **54 official, community-verified skills (over 13.6M+ total installs)** from the world's premier creators (Anthropic, Vercel Labs, Emil Kowalski, Addy Osmani, Paul Bakaus, GreenSock, Leonxlnx, NextLevelBuilder).
 
 ---
 
-## 1. The 51 Bundled Skills
+## 1. The 54 Bundled Skills
 
 ### Layer A: Visual Design, Aesthetics & Anti-Slop
 | Skill | Author / Source | Ecosystem Installs | Purpose |
@@ -81,8 +81,16 @@ This plugin bundles **51 official, community-verified skills (over 13.5M+ total 
 | **`executing-plans`** | Execution Law | Strict Execution | Step-by-step implementation execution without midway halting. |
 | **`improve-codebase-architecture`**| Architecture Standard | Modularity | Modular boundary separation, clean interfaces, and refactoring architectural sprawl. |
 
+### Layer G: Architecture Boundaries & Modular Design
+| Skill | Author / Source | Ecosystem Installs | Purpose |
+| :--- | :--- | :--- | :--- |
+| **`guarding-architecture`** | `riekelt/skills` | **22.6K+** | Enforces structural architectural boundaries, prevents God-files, and isolates feature modules. |
+| **`architecture-patterns`** | `wshobson/skills` | **25.0K+** | Clean Architecture, domain-driven tactical patterns, bounded contexts, and separation of concerns. |
+| **`api-and-interface-design`** | `addyosmani/skills` | **71.2K+** | Modular interface contracts, ergonomic API shapes, and strict component props design. |
+
+
 ---
 
 ## 2. Architecture & Scope Isolation
 
-All 51 skills reside exclusively within this plugin (`plugins/frontend-taste/skills/`) and are never duplicated into the global `~/.gemini/config/skills/` directory, ensuring zero token bloat and preventing tool routing degradation.
+All 54 skills reside exclusively within this plugin (`plugins/frontend-taste/skills/`) and are never duplicated into the global `~/.gemini/config/skills/` directory, ensuring zero token bloat and preventing tool routing degradation.
