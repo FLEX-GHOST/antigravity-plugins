@@ -58,8 +58,24 @@ Whenever the user requests code reviews, architecture changes, refactoring, or t
   - Deep-interview design interrogation: `grill-me`
   - Strict step-by-step implementation execution: `executing-plans`
   - Clean modular architecture & boundary separation: `improve-codebase-architecture`
+  - Structural architectural invariants & boundary guarding: `guarding-architecture`
+  - Clean Architecture, DDD tactical patterns & bounded contexts: `architecture-patterns`
+  - Modular interface contracts, API shapes & component props: `api-and-interface-design`
 
 ## 2. Absolute Ban on AI Slop (Zero-Tolerance)
 - Banned Defaults: Inter, Roboto, Arial, AI-purple gradient meshes, generic glassmorphism on everything, identical 3-card symmetrical grids, centered hero sections with generic floating badges, artificial white decorative lines/glints glued onto vector marks, and boolean prop proliferation (`hasBorder`, `isLoading`, `isPrimary`).
 - Banned Transitions: Instant hover snapping or generic `linear`/`ease-in-out` transitions. Use orchestrated easing (`cubic-bezier(0.16, 1, 0.3, 1)`) and spring dynamics.
 - Required Aesthetics: High-contrast typography (`Geist`, `Clash Display`, `Plus Jakarta Sans`, `IBM Plex Sans Arabic`, `Cairo`), asymmetric Bento grids or layered Z-axis cascades, double-bezel card architecture, nested pill CTAs, and intentional negative space.
+
+## 3. Anti-God-File & Modular Architecture Law
+- **Strict 250-Line Limit:** Strictly forbid creating or expanding monolithic "God Files" (`page.tsx`, `App.tsx`, single-file bloated components) exceeding 200–250 lines.
+- **Mandatory Feature Co-location:** Deconstruct features into structured modular folders:
+  ```text
+  feature-name/
+  ├── components/       # Presentational sub-components (pure UI)
+  ├── hooks/            # Custom reactive state and interaction logic
+  ├── api/              # Network requests, mutations, server actions
+  ├── types.ts          # Strictly typed contracts and interfaces
+  └── index.tsx         # Clean root orchestrator and exports
+  ```
+- **Separation of Concerns:** Never intermix data fetching, complex state machines, data formatting, and 300+ lines of JSX inside a single file. Extract domain logic into pure utility functions or custom hooks.
