@@ -1,4 +1,5 @@
 $ErrorActionPreference = "Stop"
+[Console]::OutputEncoding = [System.Text.Encoding]::UTF8
 $BundleRoot = Split-Path -Parent $MyInvocation.MyCommand.Path
 $KeysFile = Join-Path $BundleRoot "keys\keys.json"
 $PluginsSrc = Join-Path $BundleRoot "plugins"
@@ -20,6 +21,9 @@ if (Test-Path $KeysFile) {
   if ($LoadedKeys.CONTEXT7_API_KEY) { $Keys.CONTEXT7_API_KEY = $LoadedKeys.CONTEXT7_API_KEY }
   if ($LoadedKeys.EXA_API_KEY) { $Keys.EXA_API_KEY = $LoadedKeys.EXA_API_KEY }
   if ($LoadedKeys.SNYK_TOKEN) { $Keys.SNYK_TOKEN = $LoadedKeys.SNYK_TOKEN }
+  if (Test-Path (Join-Path $BundleRoot ".git")) {
+    git update-index --skip-worktree $KeysFile 2>$null
+  }
 }
 
 Write-Host "[1/5] Checking & Installing Global Packages..." -ForegroundColor Cyan
@@ -105,6 +109,22 @@ $SnykConfig = @{
 }
 $SnykConfig | ConvertTo-Json -Depth 6 | Set-Content (Join-Path $PluginsDest "snyk\mcp_config.json") -Encoding UTF8
 
+$PythonCmd = (Get-Command python -ErrorAction SilentlyContinue).Source
+if (-not $PythonCmd) { $PythonCmd = "python" }
+$TgsConfig = @{
+  mcpServers = @{
+    "tgs-studio-pro" = @{
+      command = $PythonCmd
+      args    = @((Join-Path $PluginsDest "tgs-studio-pro\server\tgs_mcp_server.py"))
+      env     = @{
+        PYTHONIOENCODING = "utf-8"
+        PYTHONUTF8       = "1"
+      }
+    }
+  }
+}
+$TgsConfig | ConvertTo-Json -Depth 6 | Set-Content (Join-Path $PluginsDest "tgs-studio-pro\mcp_config.json") -Encoding UTF8
+
 if ($Keys.SNYK_TOKEN -and $Keys.SNYK_TOKEN -ne "YOUR_SNYK_TOKEN") {
   Write-Host "[4/5] Authenticating Snyk CLI..." -ForegroundColor Cyan
   & $NodeCmd (Join-Path $NpmRoot "snyk\bin\snyk") auth $Keys.SNYK_TOKEN | Out-Null
@@ -114,4 +134,4 @@ if (Test-Path (Split-Path -Parent $OAuthFile)) {
   "{}" | Set-Content $OAuthFile -Encoding UTF8
 }
 
-Write-Host "[5/5] All 6 Antigravity Plugins Installed Successfully!" -ForegroundColor Green
+Write-Host "[5/5] All 7 Antigravity Plugins Installed Successfully!" -ForegroundColor Green

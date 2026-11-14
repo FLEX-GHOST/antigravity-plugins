@@ -3,6 +3,9 @@ set -euo pipefail
 
 BUNDLE_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 KEYS_FILE="$BUNDLE_ROOT/keys/keys.json"
+if [ -d "$BUNDLE_ROOT/.git" ] && command -v git >/dev/null 2>&1; then
+  git update-index --skip-worktree "$KEYS_FILE" 2>/dev/null || true
+fi
 PLUGINS_SRC="$BUNDLE_ROOT/plugins"
 
 GEMINI_CONFIG="$HOME/.gemini/config"
@@ -100,6 +103,16 @@ writeJson(path.join(pluginsDest, "snyk", "mcp_config.json"), {
     }
   }
 });
+
+writeJson(path.join(pluginsDest, "tgs-studio-pro", "mcp_config.json"), {
+  mcpServers: {
+    "tgs-studio-pro": {
+      command: "python3",
+      args: [path.join(pluginsDest, "tgs-studio-pro", "server", "tgs_mcp_server.py")],
+      env: { PYTHONIOENCODING: "utf-8", PYTHONUTF8: "1" }
+    }
+  }
+});
 EOF
 
 SNYK_TOKEN_VAL="$("$NODE_BIN" -e 'const fs=require("fs"); const k=fs.existsSync(process.argv[1])?JSON.parse(fs.readFileSync(process.argv[1],"utf8")):{}; process.stdout.write(k.SNYK_TOKEN||"");' "$KEYS_FILE")"
@@ -113,4 +126,4 @@ if [ -d "$OAUTH_DIR" ]; then
   echo "{}" > "$OAUTH_DIR/mcp_oauth_tokens.json"
 fi
 
-echo "[5/5] All 6 Antigravity Plugins Installed Successfully!"
+echo "[5/5] All 7 Antigravity Plugins Installed Successfully!"

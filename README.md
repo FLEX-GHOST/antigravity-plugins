@@ -6,12 +6,12 @@
 
 <p align="center">
   <strong>حزمة إضافات متكاملة لمنصة Google Antigravity</strong><br>
-  6 إضافات إنتاجية رسمية &bull; 270+ أداة برمجية &bull; 67 مهارة معتمدة مجتمعياً &bull; معمارية عزل محكمة
+  7 إضافات إنتاجية رسمية &bull; 277+ أداة برمجية &bull; 68 مهارة معتمدة مجتمعياً &bull; معمارية عزل محكمة
 </p>
 
 <p align="center">
   <img src="https://img.shields.io/badge/Platform-Antigravity%202.0%2B-blue?style=flat-square" alt="Antigravity 2.0+" />
-  <img src="https://img.shields.io/badge/Plugins-6%20Active-emerald?style=flat-square" alt="6 Plugins" />
+  <img src="https://img.shields.io/badge/Plugins-7%20Active-emerald?style=flat-square" alt="7 Plugins" />
   <img src="https://img.shields.io/badge/Skills-67%20Verified-purple?style=flat-square" alt="67 Skills" />
   <img src="https://img.shields.io/badge/Community%20Installs-13.6M%2B-orange?style=flat-square" alt="13.6M+ Installs" />
   <img src="https://img.shields.io/badge/OS-Windows%20%7C%20Linux%20%7C%20macOS-lightgrey?style=flat-square" alt="Cross Platform" />
@@ -35,6 +35,7 @@
 | **Snyk Security** | `v2.0.0` | Node.js / Snyk CLI | 1 | 15 | Token | فحص الثغرات الأمنية والتبعيات والحاويات |
 | **Serena** | `v2.0.0` | UVX / LSP Server | 1 | 25 | بيئة محلية | التنقل الدلالي في الكود وإعادة الهيكلة |
 | **Context7** | `v2.0.0` | Node.js / Context7 | 1 | 2 | API Key / حر | جلب التوثيقات البرمجية المحدثة للمكتبات |
+| **TGS Studio Pro** | `v1.0.0` | Python FastMCP | 1 | 7 | بدون مفاتيح (أوفلاين) | توليد وتحريك ملصقات Telegram (.tgs) والـ 3D Arabic |
 
 ---
 
@@ -76,6 +77,14 @@
 
 ### 6. Context7 (`v2.0.0`)
 أداة استدعاء التوثيقات الرسمية المحدثة للمكتبات والأطر البرمجية (React, Next.js, Supabase, Tailwind) لمنع الاعتماد على توثيقات قديمة أو واجهات ملغاة.
+
+### 7. TGS Studio Pro (`v1.0.0`)
+منظومة هندسة وتوليد ملصقات ورسوم متحركة Telegram (.tgs) و Lottie المتقدمة:
+* **مكتبة فيكتورات أوفلاين ضخمة (20,990+ فيكتور):** محملة ومفهرسة محلياً عبر SQLite FTS5 بسرعة استرجاع <1ms بدون إنترنت تشمل حزم Fluent Emoji Flat, Twemoji, Noto, OpenMoji, FxEmoji, Emojione, Streamline, Flat Color Icons.
+* **محول فيكتوري رياضي 100%:** تحويل دقيق لمسارات SVG المعقدة، الدوائر، المستطيلات، الأقواس (Arcs)، التدرجات اللونية الخطية والشعاعية (Linear/Radial Gradients) إلى عناصر Lottie Shapes نقية.
+* **محرك تايبوجرافي عربي ثلاثي الأبعاد (3D Arabic Typography):** دعم كامل للتشكيل وإعادة الترتيب (BiDi / Arabic Reshaper) مع استخراج مسارات الفونت المنحنية (HarfBuzz / FontTools) وبناء طبقات البعد الثالث (Extrusion Slices)، الظلال المحيطية، وحواف الشطب المصقولة (Chiseled Bevel).
+* **معايير ملصقات Telegram الصارمة:** التصدير التلقائي بصيغة Gzip (.tgs)، فريم ريت 60 FPS، أبعاد 512x512، مدة أقصاها 3 ثوانٍ، وفحص ألا يتجاوز الحجم 64 KB مع منع كامل للملفات النقطية (Raster Assets).
+* **فاحص بصري 4-Keyframe Preview:** رندر فوري من 4 لقطات إلى شريط PNG لفحص الحركة والامتثال دون الحاجة لسكربتات مؤقتة.
 
 ---
 
@@ -128,9 +137,34 @@ chmod +x install.sh && ./install.sh
 
 ---
 
-## 5. فحص الحالة والتحقق (Health Verification)
+## 5. دليل التحديث الفوري (Instant Update Guide)
 
-بعد اكتمال التثبيت، أعد تشغيل أو تحديث واجهة **Antigravity** عبر اختصار `Ctrl + R`، ثم يمكنك التحقق عبر موجه الأوامر:
+لتحديث جميع الإضافات وحزم الـ npm العالمية المرتبطة وسحب أحدث التحسينات من المستودع مع الحفاظ الكامل على مفاتيحك السرية:
+
+### على نظام Windows
+- **الطريقة المباشرة:** انقر نقراً مزدوجاً على **`update.bat`**.
+- **أو عبر PowerShell:**
+```powershell
+.\update.ps1
+```
+
+### على أنظمة Linux / macOS
+```bash
+chmod +x update.sh && ./update.sh
+```
+
+يقوم سكربت التحديث تلقائياً بالآتي:
+1. **حماية وعزل المفاتيح:** قراءة المفاتيح المحلية من `keys/keys.json` وتأمينها في الذاكرة لمنع مسحها.
+2. **سحب التحديثات (Git Sync):** سحب أحدث النسخ من المستودع الرسمي (`origin/main`) عبر الـ Rebase التلقائي.
+3. **تحديث حزم NPM:** جلب أحدث إصدارات الحزم العالمية (`@upstash/context7-mcp`, `exa-mcp-server`, `snyk`, `rea-agents`).
+4. **نشر وتوزيع الإضافات:** تحديث كافة المهارات المعزولة وملفات الإضافات في `~/.gemini/config/plugins/`.
+5. **إعادة حقن المفاتيح ومصادقة المنصات:** توليد ملفات `mcp_config.json` وضخ المفاتيح المحفوظة تلقائياً.
+
+---
+
+## 6. فحص الحالة والتحقق (Health Verification)
+
+بعد اكتمال التثبيت أو التحديث، أعد تشغيل أو تحديث واجهة **Antigravity** عبر اختصار `Ctrl + R`، ثم يمكنك التحقق عبر موجه الأوامر:
 
 ```powershell
 # فحص عدد مهارات Frontend Taste المنشورة (يجب أن يكون 54)
@@ -142,28 +176,31 @@ chmod +x install.sh && ./install.sh
 
 ---
 
-## 6. هيكل مجلدات المشروع (Repository Structure)
+## 7. هيكل مجلدات المشروع (Repository Structure)
 
 ```text
 ├── assets/
 │   └── logo.svg                 # الشعار الرسمي للحزمة (Acrylic Optical Balance)
 ├── keys/
 │   └── keys.json                # ملف المفاتيح المعزولة (فارغ افتراضياً)
-├── logo-candidates/             # سجل الأصول والمتجهات الهندسية
 ├── plugins/
 │   ├── context7/                # ملحق جلب التوثيقات المحدثة
 │   ├── exa/                     # ملحق البحث الدلالي الذكي
-│   ├── frontend-taste/          # ملحق هندسة الواجهات والذوق البصري (48 مهارة)
+│   ├── frontend-taste/          # ملحق هندسة الواجهات والذوق البصري (54 مهارة)
 │   │   ├── assets/logo.svg
 │   │   ├── plugin.json
 │   │   ├── rules/AGENTS.md
-│   │   └── skills/              # المهارات الـ 48 المعزولة بالكامل
+│   │   └── skills/              # المهارات الـ 54 المعزولة بالكامل
 │   ├── rea/                     # ملحق الهندسة العكسية (229 أداة)
 │   ├── serena/                  # ملحق التنقل الدلالي للأكواد (LSP)
-│   └── snyk/                    # ملحق الفحص والحماية الأمنية
+│   ├── snyk/                    # ملحق الفحص والحماية الأمنية
+│   └── tgs-studio-pro/          # ملحق تحريك ملصقات تيليجرام والـ 3D Arabic
 ├── install.bat                  # مشغل التثبيت السريع لنظام Windows
 ├── install.ps1                  # سكربت التثبيت البرمجي لـ PowerShell
 ├── install.sh                   # سكربت التثبيت الموحد لـ Linux و macOS
+├── update.bat                   # مشغل التحديث الفوري لنظام Windows
+├── update.ps1                   # سكربت التحديث البرمجي لـ PowerShell
+├── update.sh                    # سكربت التحديث الموحد لـ Linux و macOS
 └── README.md                    # هذا التوثيق الرسمي
 ```
 
