@@ -6,12 +6,12 @@
 
 <p align="center">
   <strong>حزمة إضافات متكاملة لمنصة Google Antigravity</strong><br>
-  7 إضافات إنتاجية رسمية &bull; 277+ أداة برمجية &bull; 68 مهارة معتمدة مجتمعياً &bull; معمارية عزل محكمة
+  6 إضافات إنتاجية رسمية &bull; 270+ أداة برمجية &bull; 67 مهارة معتمدة مجتمعياً &bull; معمارية عزل محكمة
 </p>
 
 <p align="center">
   <img src="https://img.shields.io/badge/Platform-Antigravity%202.0%2B-blue?style=flat-square" alt="Antigravity 2.0+" />
-  <img src="https://img.shields.io/badge/Plugins-7%20Active-emerald?style=flat-square" alt="7 Plugins" />
+  <img src="https://img.shields.io/badge/Plugins-6%20Active-emerald?style=flat-square" alt="6 Plugins" />
   <img src="https://img.shields.io/badge/Skills-67%20Verified-purple?style=flat-square" alt="67 Skills" />
   <img src="https://img.shields.io/badge/Community%20Installs-13.6M%2B-orange?style=flat-square" alt="13.6M+ Installs" />
   <img src="https://img.shields.io/badge/OS-Windows%20%7C%20Linux%20%7C%20macOS-lightgrey?style=flat-square" alt="Cross Platform" />
@@ -35,7 +35,6 @@
 | **Snyk Security** | `v2.0.0` | Node.js / Snyk CLI | 1 | 15 | Token | فحص الثغرات الأمنية والتبعيات والحاويات |
 | **Serena** | `v2.0.0` | UVX / LSP Server | 1 | 25 | بيئة محلية | التنقل الدلالي في الكود وإعادة الهيكلة |
 | **Context7** | `v2.0.0` | Node.js / Context7 | 1 | 2 | API Key / حر | جلب التوثيقات البرمجية المحدثة للمكتبات |
-| **TGS Studio Pro** | `v1.0.0` | Python FastMCP | 1 | 7 | بدون مفاتيح (أوفلاين) | توليد وتحريك ملصقات Telegram (.tgs) والـ 3D Arabic |
 
 ---
 
@@ -77,14 +76,6 @@
 
 ### 6. Context7 (`v2.0.0`)
 أداة استدعاء التوثيقات الرسمية المحدثة للمكتبات والأطر البرمجية (React, Next.js, Supabase, Tailwind) لمنع الاعتماد على توثيقات قديمة أو واجهات ملغاة.
-
-### 7. TGS Studio Pro (`v1.0.0`)
-منظومة هندسة وتوليد ملصقات ورسوم متحركة Telegram (.tgs) و Lottie المتقدمة:
-* **مكتبة فيكتورات أوفلاين ضخمة (20,990+ فيكتور):** محملة ومفهرسة محلياً عبر SQLite FTS5 بسرعة استرجاع <1ms بدون إنترنت تشمل حزم Fluent Emoji Flat, Twemoji, Noto, OpenMoji, FxEmoji, Emojione, Streamline, Flat Color Icons.
-* **محول فيكتوري رياضي 100%:** تحويل دقيق لمسارات SVG المعقدة، الدوائر، المستطيلات، الأقواس (Arcs)، التدرجات اللونية الخطية والشعاعية (Linear/Radial Gradients) إلى عناصر Lottie Shapes نقية.
-* **محرك تايبوجرافي عربي ثلاثي الأبعاد (3D Arabic Typography):** دعم كامل للتشكيل وإعادة الترتيب (BiDi / Arabic Reshaper) مع استخراج مسارات الفونت المنحنية (HarfBuzz / FontTools) وبناء طبقات البعد الثالث (Extrusion Slices)، الظلال المحيطية، وحواف الشطب المصقولة (Chiseled Bevel).
-* **معايير ملصقات Telegram الصارمة:** التصدير التلقائي بصيغة Gzip (.tgs)، فريم ريت 60 FPS، أبعاد 512x512، مدة أقصاها 3 ثوانٍ، وفحص ألا يتجاوز الحجم 64 KB مع منع كامل للملفات النقطية (Raster Assets).
-* **فاحص بصري 4-Keyframe Preview:** رندر فوري من 4 لقطات إلى شريط PNG لفحص الحركة والامتثال دون الحاجة لسكربتات مؤقتة.
 
 ---
 
@@ -193,8 +184,7 @@ chmod +x update.sh && ./update.sh
 │   │   └── skills/              # المهارات الـ 54 المعزولة بالكامل
 │   ├── rea/                     # ملحق الهندسة العكسية (229 أداة)
 │   ├── serena/                  # ملحق التنقل الدلالي للأكواد (LSP)
-│   ├── snyk/                    # ملحق الفحص والحماية الأمنية
-│   └── tgs-studio-pro/          # ملحق تحريك ملصقات تيليجرام والـ 3D Arabic
+│   └── snyk/                    # ملحق الفحص والحماية الأمنية
 ├── install.bat                  # مشغل التثبيت السريع لنظام Windows
 ├── install.ps1                  # سكربت التثبيت البرمجي لـ PowerShell
 ├── install.sh                   # سكربت التثبيت الموحد لـ Linux و macOS
